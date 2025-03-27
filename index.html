@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <!-- Para criar o corpo de página html, basta pressionar "!" + a tecla "TAB", e todo o modelo inicial que aborda o DOCTYPE, head
+     e body do arquivo será criado -->
+    <head>
+        <title>My First Website</title>
+    </head>
+    <body>
+        <header style="background-color: lightgreen;">
+            <h1>Boas Vindas a essa bagunça de teste</h1>
+            <a href="">Home</a>
+            <a href="">Sobre nós</a>
+            <a href="">Produtos</a>
+            <a href="">Contatos</a>
+        </header>
+        <hr>
+        <!--Tipos de Headers-->
+        <h1>This is an H1 heading</h1>
+        <h2>This is an H2 heading</h2>
+        <h3>This is an H3 heading</h3>
+        <h4>This is an H4 heading</h4>
+        <h5>This is an H5 heading</h5>
+        <hr>
+        <br>
+        <p>
+            Some text goes here
+        </p>
+        <br>
+        <hr>
+        <!-- Para utilizar um preenchimento aleatório, apenas realize "lorem" e depois pressione TAB; ex.:-->
+        <p>
+        Lorem ipsum, dolor sit amet 
+        consectetur adipisicing elit. 
+        Officia in quis reiciendis inventore vero minus 
+        aliquid ullam aspernatur? Tempore sunt 
+        iusto sed maxime id facilis ut, 
+        neque ullam ipsum voluptatibus.
+        </p>
+        <!-- Tambem dá para realizar a criação de um '<pre></pre>', que seria nada mais nada menos
+         que um parágrafo formatado, aonde todas as informações se manteriam as mesmas, da maneira que foram digitada, diferente dos
+         parágrafos '<p></p>', que requerem formatação.-->
+        
+        <!-- Aqui já se trata da criação de hyperlinks, utilizados para realizar a ligação
+         entre páginas, imagens, e, enfim, anexação a coisas externas que não estão presentes em nossa página
+         que está sendo criada-->
+         <a href="https://genius.com/Princess-ketamine-cherry-lyrics"
+         target="_blank"
+         title="Vai para o site Genius.com"
+         > 
+        click me
+         </a>
+         <!-- Essa configuração de (target="_blank") vai fazer com que o usuário seja redirecionado para a 
+          página que ele clicou através de uma nova guia que será criada - tudo isso de maneira automática.
+          Já o "title" vai gerar um textozinho de dica quando se passar o mouse por cima do que seria a mensagem de "click me"-->
+        
+        <br>
+
+        <a href="lyrics.html">
+        song lyrics 
+        </a>
+
+        <br>
+        <!-- Agora essa será a simulação de um link para enviar um email a alguem: -->
+
+        <a href="mailto:test@fake.com">
+            email me
+        </a>
+
+        <br>
+
+        <!-- tá, lá vamos nós, agora iremos tratar de imagens: -->
+        <h1>A capa do single "Cherry"</h1>
+        <a href="https://genius.com/Princess-ketamine-cherry-lyrics">
+        <img src="photos/cherry_songcover.jpg"
+        alt="capa de cherry - princess ketamine"
+        height="200">
+        </a>
+        <br>
+        <h3>Imagem Ilustrativa</h3>
+        <img src="photos/cherry.gif"
+        height="150"
+        width="200">
+
+        <br>
+        <!-- Com o 'controls' você possibilita as opções de dar play, selecionar o timing da faixa,
+         alterar o volume, e afins. também há a possibilidade de ao invés de colocar esse comando, você coloque o
+         'autoplay', mas normalmente não se deve fazer isso, pois: irritante. você tambem pode pôr o 'autoplay muted', para que
+         ele já comece sim, tocando automaticamente, mas de forma mutada. também pode-se colocar a opção de 'loop', para que
+         a música se repita de forma automática, por um tempo indefinido.-->
+        <p>Holding Hands</p>
+         <audio controls>
+            <source src="audios/Holding Hands - Jeremy Korpas.mp3">
+        </audio>
+        <br>
+        <p>Rainbow Road</p>
+        <audio controls>
+            <source src="audios/Rainbow Road - Jeremy Korpas.mp3">
+        </audio>
+        <br>
+        <p>Treasure Hunt</p>
+        <audio controls>
+            <source src="audios/Treasure Hunt - Jeremy Korpas.mp3">
+        </audio>
+
+        <br>
+        <video src="media/ys video engraçadinho.mp4" height="150px" controls autoplay loop muted></video>
+
+        <br>
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <u>underlined</u> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <tt>monospace</tt> text</p>
+        <p>This is <mark>marked</mark> text</p>
+        <!-- Agora: um sneakpeek de css (como modificar a cor do texto do tipo 'mark')-->
+        <p>This is <mark style="background-color: chartreuse;">marked</mark> text</p>
+
+        <br>
+        <!-- Basicamente versões alternativas de se fazer o marked text (?) -->
+        <h1><span style="background-color:gold;">This is a span title</span></h1>
+        <h1><div style="background-color: silver;">This is a div title</div></h1>
+        <p><span style="background-color: gold;">This is a span sentence</span></p>
+        <p><div style="background-color: silver;">This is a div sentence</div></p>
+
+        <br>
+        <!-- Lista Desordenada (Unordered List) -->
+         <h4>Lista de Compras</h4>
+         <ul>
+            <li>leite</li>
+            <li>ovos</li>
+            <li>pães</li>
+            <li>verduras</li>
+            <ul>
+                <li>alface</li>
+                <li>cheiro-verde</li>
+                <li>acelga</li>
+            </ul>
+         </ul>
+
+         <br>
+        <!-- Lista Ordenada (Ordered List) -->
+         <h4>Músicas que devo ouvir (na ordem)</h4>
+         <ol>
+            <li>Charli xcx - Mean girls</li>
+            <li>Charli xcx - Girl, so confusing</li>
+            <li>Charli xcx - Jenny</li>
+         </ol>
+
+         <br>
+         <!-- Lista Descritiva (Description List) -->
+          <p><dl span style="background-color: beige;"></p>
+            <h4>Definição de Gemas de Ascensão </h4>
+            <dt>Pyro</dt>
+            <dd>"Peregrino por vontade própria...
+                <br>"Alimentando o fogo dos sonhos."
+                <br>"Se ainda assim as intenções permanecerem, terá encontrado a verdade sobre ██.</dd>
+                <br>
+            <dt>Cryo</dt>
+            <dd>"Desculpe..."
+                <br>"...por lhe fazer ter que carregar o peso deste mundo."
+                <br>"Já que você consegue lidar com a minha frieza, você deve ter um desejo ardente por dentro."
+                <br>"Então, queime o mundo antigo para mim."</dd>
+                <br>
+            <dt>Hydro</dt>
+            <dd>"Meus ideais são intocados."
+                <br>"Eu preciso corrigir você. As pessoas aqui não cometem erros diante dos olhos dos deuses... Apenas a lei e o Tribunal podem julgara alguém".
+                <br>"Eles podem até mesmo me julgar. Portanto, louve minha magnificência e pureza."</dd>
+                <br>
+            <dt>Electro</dt>
+            <dd>"Este corpo é o mais nobre e eminente de todos neste mundo."
+                <br>"Deve ter o controle absoluto deste mundo."
+                <br>"Uma vez, prometeu um sonho ao seu povo: a eternidade imutável."</dd>
+
+            <!-- então, "dl" = description list
+                        "dt" = description terms
+                        "dd" = description definition-->
+          </dl>
+    </body>
+</html>
