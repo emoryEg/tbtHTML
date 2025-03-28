@@ -1,18 +1,132 @@
+@font-face {
+    src: url(fonts/RougeScript-Regular.ttf);
+    font-family: RougeScript-Regular;
+}
+
 body {
     background-color: black;
+    display: flow-root;
 }
+
+/* Cores */
 h1{
     color: white;
 }
+h2{
+    color: white;
+}
+p{
+    color: white;
+}
 #p1{
-    color: red;
+    color: thistle;
 }
 #p2{
-    color: orange;
+    color: plum;
 }
 #p3{
-    color: yellow;
+    color: purple;
 }
 #p4{
-    color: green;
+    color: rebeccapurple;
 }
+
+/* Fontes */
+#hd1{
+    font-family: verdana, arial; 
+    color: aqua;
+}
+#p5{
+    font-family: "lucida console", "courier new";
+    font-size: 13px; /* normalmente é 16px; tambem pode ser medida pela métrica de 'em'*/
+    font-weight: bold; /* normalmente, por padrão, consta como 'normal' */
+    font-style: italic;
+    color: rgb(167, 242, 255);
+}
+#p6{
+    font-family: League Script; /* Esta fonte foi adicionada através do google fonts, com seu código referencial sendo adicionado
+    na página de html, (linhas entre 8 e 10)*/
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(167, 242, 255);
+}
+#p7{
+font-family: RougeScript-Regular; /* Tambem existe a possibilidade de se realizar o download de uma determinada fonte e alocá-la localmente
+no projeto. Para a realização organizada desse método é recomendado que seja criada uma pasta 'fonts', e ter o arquivo .ttf delas
+inseridos nela; após isso deve-se identificar a fonte no topo do arquivo .css, como foi realizado no topo deste, para então poder
+dar um nome a esta família importada, e chamá-la através do comando font-family, como feito na linha a qual este longo comentário se refere*/
+font-size: 30px;
+color: steelblue;
+}
+
+/* Bordas */
+#hd2{
+    border-style: solid;
+    border-width: 6;
+    border-color: rgb(255, 74, 149);
+/* Em caso de simplificação, dá para ser adicionada o border-style, width e color tudo em uma tacada só, ex.:
+    border: 6px solid rgb(255, 74, 149);
+    essa linha logo acima desta referencia exatamente as mesmas coisas que estão sendo referenciadas de forma individual */
+    border-radius: 6px;
+}
+#p8{
+    color: white;
+    font-size: small;
+    border-bottom: 3px solid red;
+    border-top: 3px solid yellow;
+    border-left: 3px solid blue;
+    border-right: 3px solid green;
+    border-radius: 10px;
+}
+
+/* Sombras */
+#hd3{
+    color: white;
+    text-shadow: 3px 5px 3px red, -3px -5px 3px blue;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    box-shadow: 3px 3px 5px purple;
+}
+
+/* Margens */
+#hd4{
+    color: white;
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+    #box2{
+        background-color: lightsalmon;
+        margin: auto;
+    }
+    #box3{
+        background-color: lightcoral;
+    }
+#p9{
+    color: white;
+    margin: 10px; /* Linda informação, vamos memorizando. tava me dando um gatilho terrível esses textos todos grudados no encosto da página. */
+}
+
+.container {
+    border: 2px solid white;
+    margin-right: 200px;
+    padding: 10px;
+    display: flow-root;
+}
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+#img2{
+    float: right;
+    margin-right: 10px;
+} /* Tá, o float é basicamente a formatação de imagens/textos, para que se alinhem uns nos outros,
+    inclusive quando ocorrer o redimensionamento de tela, 
+
+    /*Overflow: 
