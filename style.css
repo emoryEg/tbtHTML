@@ -16,6 +16,7 @@ h2{
     color: white;
 }
 p{
+    font-size: 13px;
     color: white;
 }
 #p1{
@@ -127,6 +128,140 @@ color: steelblue;
     float: right;
     margin-right: 10px;
 } /* Tá, o float é basicamente a formatação de imagens/textos, para que se alinhem uns nos outros,
-    inclusive quando ocorrer o redimensionamento de tela, 
+    inclusive quando ocorrer o redimensionamento de tela. */
 
-    /*Overflow: 
+#div2{
+    border: 2px solid white;
+    height: 75px;
+    overflow: scroll;
+    margin-right: 200px;
+    padding: 10px;
+    display: flow-root;
+}
+/*Overflow: é a maneira como se decide como que irá se lidar com 'objetos' que transbordam para fora de caixas 
+    que deveriam retê-los (overflow = transbordar).
+    
+    visible = é a configuração default, que permite que a transbordagem ocorra sem restrições
+
+    hidden = com essa configuração, qualquer conteúdo que poderia vazar para fora da caixa de restrição
+    passará a ser escondido, não tendo sido eliminado, mas realmente apenas escondido
+    
+    clip = não há uma mudança aparente, por isso deve ser utilizado junto ao 'overflow-clip-margin'
+    overflow-clip-margin = permite a seleção de *quanto* aquilo que está dentro da caixa de seleção será escondido,
+    e quanto que será vazado
+    
+    scroll = fornece uma barra de scroll - vertical e horizontal - que permite a visualização de tudo oque está 
+    lockado dentro da box de restrição, porém caso a caixa de restrição passe a ficar mais vazia, o scroll se tornará inutilizável
+    (pois tudo que precisa ser visualizado já estará sendo apresentado de qualquer maneira), mas mesmo assim o scroll 
+    continuará presente/visível
+    
+    auto = se adapta conforme a necessidade do que se encontra presente dentro da caixa de restrição. se houver
+    poucas coisas ocupando espaço dentro da mesma, nada mudará, mas se passar a haver os scrolls passarão
+    a estar presentes de maneira automática*/
+
+#div3{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#sp1{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#p14{
+    color: white;
+}
+/* Display: é uma propriedade que especifica se/como um elemento é retratado
+
+    block-level: começa em uma linha nova, e toma toda a largura disponível da mesma
+        (ex.: h1, div, p, form, header, footer)
+
+    inline: não começa em uma linha nova, largura é limitada para aquilo que é necessário
+        (ex.: span, a, img)
+*/
+
+#box4{
+    border: 2px solid;
+    height: auto;
+    width: 100px;
+    font-size: medium;
+    color: white
+}
+#box5{
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 100px;
+    font-size: medium;
+    color: white;
+}
+
+/* Posicionadores
+    relative = posicionado relativo a onde estaria normalmente
+    fixed = posicionado relativo ao 'viewport'
+    absolute = posicionado relativo ao ancestral mais próximo
+    sticky = posicionado baseado na posição do scroll
+    static = configuração/posição padrão de um elemento */  
+
+/* Combinadores
+    Explicam o relacionamento entre objetos selecionados:        
+      = descendant (o que precede o símbolo de '=' é um vazio mesmo)
+    > = child
+    ~ = general sibling
+    + = adjacent sibling */
+
+/* Pseudo-classes
+  São palavras-chave adicionadas a um seletor. Eles modificam 
+  o comportamento de um elemento quando eles estão em um determinado estado, 
+  por exemplo:
+
+  button:hover{
+    font-size: 1.1em;
+    background-color: hsl(106, 90%, 70%);
+}
+  button:active{
+  font-size: 1.1em;
+  background-color: hsl(0, 90%, 70%);
+}
+
+  Ao se passar o mouse por cima de um botão, esse determinado botão ficará verde, e
+  ao clicar neste botão ele ficará vermelho */
+
+/* Pseudo-elementos
+    Palavra-chave dada em nome de um seletor,
+    que é oque é utilizado para estilizar partes específicas de um elemento
+
+    formula: selector::pseudo-element; ex.:
+
+    h1::first-letter{
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    No exemplo acima, oque foi realizado foi a personalização solo da primeira
+    letra de uma palavra em uma header do tipo 1 */
+
+/* Páginação
+   Método no qual um documento é separado em páginas,
+   a qual passam a ser enumeradas (como um sumário; livro) */
+
+/* Dropdown-menu
+   Remetente a criação de menus selecionáveis, daqueles em que ao se clicar
+   aparecem as opções selecionáveis, oque possibilita a realização da
+   seleção da opção desejada. */
+
+/* Barra de navegação */
+/* Website Layout */
+/* Image Gallery */
+/* Icons */
+/* Flexbox */
+
+/* Transformations 
+   Essa propriedade de transformação do CSS permite que se rotacione,
+   escale, incline ou que se traduza um elemento */
+   
+
+/* Animations */
